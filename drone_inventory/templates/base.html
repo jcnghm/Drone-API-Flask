@@ -22,21 +22,30 @@
                 <a href="{{ url_for('site.home') }}">
                     <li>The Coding Drones Project</li>
                 </a>
+                
                 <a href="">
                     <li>Donate</li>
                 </a>
+
                 <a href="{{ url_for('site.profile') }}">
                     <li>Profile</li>
                 </a>
-                <a href="">
+                <!-- User Auth Check for Signin/Signup Nav Buttons -->
+                <!-- Line below should say "is_authenticated" not "isauthenticated" -->
+                {% if current_user.is_authenticated %}
+                <a href="{{ url_for('auth.logout') }}">
                     <li>Logout</li>
                 </a>
+
+                {% else %}
                 <a href="{{ url_for('auth.signin') }}">
                     <li>Sign In</li>
                 </a>
+
                 <a href="{{ url_for('auth.signup') }}">
                     <li>Sign Up Free</li>
                 </a>
+                {% endif %}
             </ul>
         </div>
         
