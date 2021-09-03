@@ -1,6 +1,6 @@
 # Drone Inventory API Project
 
-![Site Image Example](https://jcnghm.github.com/flask_project_in_class_example/drone_inventory/static/images/drone-api-project.png)
+![Site Image Example](https://github.com/jcnghm/flask_project_in_class_example/drone_inventory/static/images/drone-api-project.png)
 
 ## Deployment
     - Deployed on Heroku
